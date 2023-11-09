@@ -1,18 +1,12 @@
-"""
-Main cli or app entry point
-"""
-
-from mylib.__init__ import add
-import click
+# main.py
+import pandas as pd
 
 
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
+def load_data(file_path):
+    dataframe = pd.read_csv(file_path)
+    return dataframe
 
 
 if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    add_cli()
+    df = load_data("./assets/datasets/credit/train.csv")
+    print(df.shape)

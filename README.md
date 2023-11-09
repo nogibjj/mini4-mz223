@@ -1,48 +1,44 @@
-[![CI](https://github.com/zhuminghui17/python-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/zhuminghui17/python-template/actions/workflows/cicd.yml)
+[![CI](https://github.com/nogibjj/mini2-mz223/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/mini2-mz223/actions/workflows/cicd.yml)
 
-This is the Python template for IDS721 Data Engineering Systems.
+# Week 2 Mini-project: Pandas Descriptive Statistics Script
 
-This document provides an overview of the key components within the project repository.
+## Overview
+This repository contains a Python script (`main.py`) for loading a CSV file into a pandas DataFrame and printing its shape. The script is an introductory example of using pandas for data analysis, specifically for understanding the structure of a dataset.
 
-### `.devcontainer`
-- **`Dockerfile`**: Defines the container's build process and environment.
-- **`devcontainer.json`**: Contains configuration settings for the development environment in VS Code.
+## Installation
 
-### `workflows`
-- Contains GitHub Actions workflows for automated build, test, and deployment pipelines.
+Before running the script, ensure you have Python installed on your system. This script was written using Python 3.9.7, but it should be compatible with any Python 3.x version.
 
-### `.gitignore`
-- Lists the files and directories that Git should ignore.
+Additionally, you'll need to install pandas. It's recommended to use a virtual environment:
 
-### `Makefile`
-- Used for automating compilation, testing, and other development tasks on Unix-based systems.
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install pandas
+```
 
-### `README.md`
-- Offers instructions and an introduction to the project.
+Usage
+To execute the script, run the following command from the root of the repository:
+```
+python main.py
+```
+The script will load the data from ./assets/datasets/credit/train.csv and print the shape of the DataFrame to the console.
 
-### `main.py`
-- The main Python script of the project.
-
-### `requirements.txt`
-- Specifies all necessary libraries and packages for the project.
-
-### `test_main.py`
-- Test script designed to validate the functionality of `main.py` within IDEs.
-
-### `img`
-- Stores screenshots or images of the project's execution results.
+Project Structure
+* `main.py`: The main script file.
+* `assets/datasets/credit/train.csv`: The dataset file (not included in the repository).
+* `requirements.txt`: The file listing the necessary Python dependencies.
+* `test_main.py`: Contains unit tests for main.py to ensure the load function works correctly.
 
 ## Continuous Integration with GitHub Actions
 
 The project uses GitHub Actions, employing the following commands:
 
 - `make install`: Installs project dependencies.
-![make install](images/make_install.jpg)
 - `make test`: Runs unit tests.
-![make test](images/make_test.jpg)
 - `make format`: Formats the code according to the specified style.
 - `make lint`: Checks the code for potential errors and style issues.
-![other](images/others.jpg)
+![Image](./images/WechatIMG792.jpg)
 
 ### CI Results
-![GitHub Actions](images/github_actions.jpg)
+[Please click here](https://github.com/nogibjj/mini2-mz223/actions)
