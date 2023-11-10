@@ -1,4 +1,4 @@
-[![CI](https://github.com/nogibjj/mini2-mz223/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/mini2-mz223/actions/workflows/cicd.yml)
+[![CI](https://github.com/nogibjj/mini4-mz223/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/mini4-mz223/actions/workflows/cicd.yml)
 
 # Week 2 Mini-project: Pandas Descriptive Statistics Script
 
@@ -41,4 +41,4 @@ The project uses GitHub Actions, employing the following commands:
 ![Image](./images/WechatIMG792.jpg)
 
 ### CI Results
-[Please click here](https://github.com/nogibjj/mini2-mz223/actions)
+[Please click here](https://github.com/nogibjj/mini4-mz223/actions)
